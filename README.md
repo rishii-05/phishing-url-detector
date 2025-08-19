@@ -4,13 +4,13 @@ An intelligent web application that uses Natural Language Processing (NLP) to de
 
 ---
 
-## 🚀 The Story Behind The Project: Evolution & Key Learnings
+## 🚀 Key Learnings
 
-This project began as an implementation of my resume's description: a phishing detector using a **Neural Network** trained on hand-crafted URL attributes (like URL length, character counts, etc.). While this initial model achieved decent accuracy, I quickly discovered its limitations. It was rigid and would often misclassify legitimate modern websites that had structural similarities to phishing links (e.g., flagging a safe URL just because it contained a hyphen).
+* **Model Evolution:** The project started with a Neural Network using hand-crafted features, which proved too rigid. It was upgraded to a more powerful Natural Language Processing (NLP) model to understand the *meaning* of words in a URL, significantly improving performance.
 
-This led me to evolve the project. I re-engineered the core logic to use a more powerful **Natural Language Processing (NLP)** approach with a Logistic Regression model. Instead of just looking at the URL's structure, this new model treats the URL like a sentence, learning which *words* and *phrases* are most associated with phishing attempts.
+* **The Challenge of Dataset Bias:** The most critical learning was discovering the model's limitations due to its training data. The NLP model learned to be overly suspicious of common words like "login" or uncommon technical terms like "leet" because they appeared more frequently in phishing URLs in the dataset.
 
-This upgrade significantly improved the model's intelligence and accuracy. However, it also revealed a fascinating challenge: **dataset bias**. The model learned to be suspicious of words like "login" or uncommon technical terms like "leet" because they appeared more frequently in phishing URLs within the training data. This highlighted that the true challenge of a real-world AI system is not just building a model, but understanding its limitations and the data that shapes its "worldview".
+* **Conclusion:** This project highlighted that a model is only as good as the data it's trained on. Understanding and identifying dataset bias is just as important as building the model itself for creating a reliable, real-world application.
 
 ---
 
