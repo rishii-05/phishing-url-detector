@@ -1,0 +1,123 @@
+/* General Body Styles */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f0f2f5;
+    color: #1c1e21;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Main Container */
+.container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+/* Header */
+header h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #0d1117;
+    margin-bottom: 8px;
+}
+
+header p {
+    font-size: 1rem;
+    color: #606770;
+    margin-bottom: 30px;
+}
+
+/* Form and Input */
+.input-group {
+    display: flex;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.input-group input[type="text"] {
+    flex-grow: 1;
+    border: 1px solid #ccd0d5;
+    padding: 14px 16px;
+    font-size: 1rem;
+    border-right: none;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.input-group input[type="text"]:focus {
+    border-color: #1877f2;
+}
+
+.input-group button {
+    background-color: #1877f2;
+    color: white;
+    border: none;
+    padding: 14px 24px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.input-group button:hover {
+    background-color: #166fe5;
+}
+
+/* Result Card */
+.result-card {
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: left;
+    border-left-width: 5px;
+    border-left-style: solid;
+}
+
+.result-card h2 {
+    margin-top: 0;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.result-card p {
+    font-size: 1rem;
+    margin-bottom: 0;
+}
+
+.result-card .submitted-url {
+    margin-top: 15px;
+    font-size: 0.9rem;
+    color: #606770;
+    word-break: break-all;
+}
+
+/* Result Card Variants */
+.result-card.safe {
+    background-color: #e9f5e9;
+    border-left-color: #42b72a;
+    color: #1e4620;
+}
+
+.result-card.phishing {
+    background-color: #fdeaea;
+    border-left-color: #fa383e;
+    color: #611b22;
+}
+
+/* Footer */
+footer {
+    margin-top: 30px;
+    font-size: 0.85rem;
+    color: #90949c;
+}
