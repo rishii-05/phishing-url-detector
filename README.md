@@ -94,9 +94,10 @@ Open your web browser and navigate to `http://127.0.0.1:5000` to see the applica
 
 ---
 
-## 📂 Project Structurephishing_detector/
+## 📂 Project Structure
 
 ```
+phishing-url-detector/
 |
 ├── app/                  # Contains the Flask application
 │   ├── static/           # CSS and other static files
